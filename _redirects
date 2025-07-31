@@ -1,0 +1,19 @@
+# Redirect rules for Cloudflare Pages
+
+# Redirect root to index.html
+/ /index.html 200
+
+# Handle blog page
+/blog /blog.html 200
+
+# Handle privacy policy modal
+/privacy /index.html#privacy 200
+
+# Handle terms of service modal  
+/terms /index.html#terms 200
+
+# Handle cookie policy modal
+/cookies /index.html#cookies 200
+
+# 404 fallback
+/* /index.html 404

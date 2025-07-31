@@ -1,0 +1,27 @@
+name = "peak-game-website"
+compatibility_date = "2024-01-15"
+
+[env.production]
+routes = [
+  { pattern = "peakgame.pro", zone_name = "peakgame.pro" },
+  { pattern = "www.peakgame.pro", zone_name = "peakgame.pro" }
+]
+
+[[env.production.rules]]
+type = "Text"
+globs = ["**/*.html"]
+[env.production.rules.default_headers]
+"Cache-Control" = "public, max-age=3600"
+"X-Content-Type-Options" = "nosniff"
+
+[[env.production.rules]]
+type = "Text" 
+globs = ["**/*.css", "**/*.js"]
+[env.production.rules.default_headers]
+"Cache-Control" = "public, max-age=31536000"
+
+[[env.production.rules]]
+type = "Text"
+globs = ["**/*.jpg", "**/*.png", "**/*.gif", "**/*.webp"]
+[env.production.rules.default_headers]
+"Cache-Control" = "public, max-age=31536000"

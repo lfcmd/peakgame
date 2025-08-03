@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Homepage - Main landing page -->
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
   <url>
     <loc>https://peakgame.pro/</loc>
     <lastmod>2024-12-15</lastmod>
@@ -10,9 +11,10 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://peakgame.pro/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://peakgame.pro/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://peakgame.pro/?lang=zh" />
   </url>
 
-  <!-- Blog/Strategy Guide page -->
+  <!-- Blog Page -->
   <url>
     <loc>https://peakgame.pro/blog.html</loc>
     <lastmod>2024-12-15</lastmod>
@@ -20,78 +22,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://peakgame.pro/blog.html" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://peakgame.pro/blog.html?lang=ja" />
-  </url>
-
-  <!-- Game sections (anchor links for SEO) -->
-  <url>
-    <loc>https://peakgame.pro/#game</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/#features</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/#news</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/#about</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Important images for image SEO -->
-  <url>
-    <loc>https://peakgame.pro/header.jpg</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/ss_5481a463ddc19a8def7eb64660caf6da12d9f22c.600x338.jpg</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/ss_63b22127ea64aba8b16c33a172b0fedbf542e834.600x338.jpg</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/ss_471f445657aaf8b8c1d039389e5dcc6a8bcc32c5.600x338.jpg</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/ss_52547c087901dec5b065b4559503804c02c10c22.600x338.jpg</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://peakgame.pro/ss_9c500124c060f162f111afa679bf5d3a32b3fb40.600x338.jpg</loc>
-    <lastmod>2024-12-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://peakgame.pro/blog.html?lang=zh" />
   </url>
 
 </urlset>

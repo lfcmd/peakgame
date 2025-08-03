@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /blog.html
+
+# Allow images for image search
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+
+# Block unnecessary files
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /wrangler.toml
+Disallow: /_headers
+Disallow: /_redirects
+
+# Sitemap location
+Sitemap: https://peakgame.pro/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1

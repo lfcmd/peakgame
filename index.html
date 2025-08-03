@@ -4,28 +4,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Peak Game - Cooperative Climbing Adventure | peakgame.pro</title>
+	<title>Peak Game – Best Co-op Climbing Adventure Game of 2025 | Team Up & Conquer</title>
 	<meta name="description"
-		content="Join a thrilling cooperative climbing adventure in Peak Game, where teamwork and skills lead you through breathtaking landscapes filled with challenges. Will We Reach The Peak?">
+		content="Peak Game is a thrilling co-op climbing and action-adventure game. Join your friends, overcome physics-based challenges, and explore epic levels. Discover features & join the launch!">
 	<meta name="keywords"
 		content="cooperative climbing game, third-person adventure, realistic mountaineering mechanics, environmental puzzles, teamwork gameplay, immersive storytelling, dynamic weather systems, character customization">
 	<link rel="canonical" href="https://peakgame.pro/">
 
 	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="Peak Game - Cooperative Climbing Adventure">
+	<meta property="og:title" content="Peak Game – Best Co-op Climbing Adventure Game of 2025 | Team Up & Conquer">
 	<meta property="og:description"
-		content="Climb together. Fall alone. Survive the summit. Experience the ultimate cooperative climbing adventure.">
+		content="Peak Game is a thrilling co-op climbing and action-adventure game. Join your friends, overcome physics-based challenges, and explore epic levels. Discover features & join the launch!">
 	<meta property="og:url" content="https://peakgame.pro/">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Peak Game">
 
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Peak Game - Cooperative Climbing Adventure">
-	<meta name="twitter:description" content="Climb together. Fall alone. Survive the summit.">
+	<meta name="twitter:title" content="Peak Game – Best Co-op Climbing Adventure Game of 2025 | Team Up & Conquer">
+	<meta name="twitter:description" content="Peak Game is a thrilling co-op climbing and action-adventure game. Join your friends, overcome physics-based challenges, and explore epic levels. Discover features & join the launch!">
+
+	<!-- Japanese Meta Tags (for language switching) -->
+	<meta name="title-ja" content="Peak Game – 2025年最高の協力クライミングアドベンチャーゲーム｜チームで登り切って征服しよう">
+	<meta name="description-ja" content="Peak Game はスリリングな協力型クライミングアクションアドベンチャーゲームです。友達と一緒に物理を駆使した障害を乗り越え、壮大なレベルを探索しよう。特徴を知り、今すぐ参加しよう！">
+	<meta property="og:title-ja" content="Peak Game – 2025年最高の協力クライミングアドベンチャーゲーム｜チームで登り切って征服しよう">
+	<meta property="og:description-ja" content="Peak Game はスリリングな協力型クライミングアクションアドベンチャーゲームです。友達と一緒に物理を駆使した障害を乗り越え、壮大なレベルを探索しよう。特徴を知り、今すぐ参加しよう！">
+	<meta name="twitter:title-ja" content="Peak Game – 2025年最高の協力クライミングアドベンチャーゲーム｜チームで登り切って征服しよう">
+	<meta name="twitter:description-ja" content="Peak Game はスリリングな協力型クライミングアクションアドベンチャーゲームです。友達と一緒に物理を駆使した障害を乗り越え、壮大なレベルを探索しよう。特徴を知り、今すぐ参加しよう！">
 
 	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	<link rel="shortcut icon" href="/favicon.png">
 
 	<style>
 		* {
@@ -1473,6 +1484,25 @@
 					element.textContent = translations[lang][key];
 				}
 			});
+
+			// Update meta tags for SEO
+			if (lang === 'ja') {
+				// Switch to Japanese meta tags
+				document.title = document.querySelector('meta[name="title-ja"]').content;
+				document.querySelector('meta[name="description"]').content = document.querySelector('meta[name="description-ja"]').content;
+				document.querySelector('meta[property="og:title"]').content = document.querySelector('meta[property="og:title-ja"]').content;
+				document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[property="og:description-ja"]').content;
+				document.querySelector('meta[name="twitter:title"]').content = document.querySelector('meta[name="twitter:title-ja"]').content;
+				document.querySelector('meta[name="twitter:description"]').content = document.querySelector('meta[name="twitter:description-ja"]').content;
+			} else {
+				// Switch to English meta tags (default)
+				document.title = "Peak Game – Best Co-op Climbing Adventure Game of 2025 | Team Up & Conquer";
+				document.querySelector('meta[name="description"]').content = "Peak Game is a thrilling co-op climbing and action-adventure game. Join your friends, overcome physics-based challenges, and explore epic levels. Discover features & join the launch!";
+				document.querySelector('meta[property="og:title"]').content = "Peak Game – Best Co-op Climbing Adventure Game of 2025 | Team Up & Conquer";
+				document.querySelector('meta[property="og:description"]').content = "Peak Game is a thrilling co-op climbing and action-adventure game. Join your friends, overcome physics-based challenges, and explore epic levels. Discover features & join the launch!";
+				document.querySelector('meta[name="twitter:title"]').content = "Peak Game – Best Co-op Climbing Adventure Game of 2025 | Team Up & Conquer";
+				document.querySelector('meta[name="twitter:description"]').content = "Peak Game is a thrilling co-op climbing and action-adventure game. Join your friends, overcome physics-based challenges, and explore epic levels. Discover features & join the launch!";
+			}
 
 			// Update HTML lang attribute
 			document.documentElement.lang = lang === 'ja' ? 'ja' : 'en';
